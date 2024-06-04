@@ -1,2 +1,2 @@
 # bitcandies
-A dream team of developers landing page
+The landing page for a dream team of developers.
