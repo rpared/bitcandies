@@ -1,0 +1,175 @@
+body {
+  background-color: #222;
+  background-image: repeating-linear-gradient(
+    130deg,
+    #525252 10px,
+    #1d1d1d 20px
+  );
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  margin: 0 auto;
+  box-shadow: 0 0 15px black;
+  max-width: 700px;
+  /* border: 1px solid red; */
+}
+main,
+header,
+footer {
+  background-color: #222;
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 700px;
+  /* box-shadow: 0 0 15px black; */
+}
+
+header,
+footer {
+  margin-top: 0px;
+  text-align: center;
+  background-color: #222222ba;
+}
+
+header img {
+  -webkit-filter: drop-shadow(0 0 15px black);
+  filter: drop-shadow(0 0 15px black);
+}
+
+h1 span,
+h2 span {
+  color: #9cce4d;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+.about-us p {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team article {
+  background-color: #333;
+  max-width: 240px;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.profile-pic {
+  margin: 20px auto;
+  position: relative;
+  border-radius: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 3px solid #9cce4d;
+  box-shadow: 0 0 15px black;
+}
+.team article img {
+  max-width: 200px;
+  position: relative;
+  filter: grayscale();
+}
+
+.team article h3 {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.bio {
+  font-size: 10pt;
+  line-height: 120%;
+  margin-bottom: 10px;
+  padding: 0 14px;
+}
+
+.skills {
+  font-size: 9pt;
+  display: block;
+  padding: 10px 16px;
+  background-color: #242424;
+  color: #6c883f;
+  line-height: 110%;
+}
+
+.skills span {
+  display: block;
+  border-bottom: 1px solid #9e9e9e6b;
+  margin-bottom: 4px;
+
+  color: #9e9e9e;
+  font-weight: 700;
+}
+
+.team article:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+.team article:hover img,
+.team article:hover h3,
+.team article:hover p {
+  filter: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+}
+
+/*Background Slider*/
+
+.slider-container {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+#slider-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+  }
+
+  .team article {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
