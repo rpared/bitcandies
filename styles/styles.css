@@ -138,6 +138,32 @@ footer {
   text-align: center;
 }
 
+.form-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Defines two columns  */
+  grid-gap: 10px;
+}
+
+.form-container label {
+  grid-column: span 1; /* Labels span across both columns */
+}
+
+.form-container input,
+.form-container textarea {
+  grid-column: span 1;
+  max-width: 400px;
+}
+.form-container button {
+  max-width: 100px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  max-width: 100px;
+  background-color: #9cce4d;
+  border-radius: 5px;
+}
+
 /*Background Slider*/
 
 .slider-container {
@@ -171,5 +197,12 @@ footer {
   .team article {
     width: 100%;
     margin: 0 0 20px;
+  }
+
+  .form-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* Defines two columns  */
+    grid-gap: 10px;
   }
 }
