@@ -199,6 +199,10 @@ footer {
     margin: 0 0 20px;
   }
 
+  .team article img {
+    filter: none;
+  }
+
   .form-container {
     margin-top: 20px;
     display: grid;
